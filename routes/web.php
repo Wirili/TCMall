@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'mobile','as'=>'mobile.'], function () {
     Route::get('/', ['uses'=>'Mobile\IndexController@index','as'=>'/']);
     Route::get('index', ['uses'=>'Mobile\IndexController@index','as'=>'index']);
+    Route::get('user/index', ['uses'=>'Mobile\UserController@index','as'=>'user.index']);
 });
 
 Route::group(['prefix' => 'admin','as'=>'admin.'], function () {

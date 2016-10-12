@@ -31,7 +31,7 @@ ul, li, ol, dl {
 a {
   text-decoration: none;
   color: #474849;
-  &:hover,&:active,&:focus{
+  &:hover, &:active, &:focus {
     text-decoration: none;
   }
 }
@@ -45,6 +45,12 @@ select, input {
   border: 1px solid #999;
   border-radius: 4px;
   -moz-border-radius: 4px; /* 老的 Firefox */
+}
+
+img {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .pl-list {
@@ -83,6 +89,32 @@ select, input {
     &.active {
       a, span {
         color: $m-color;
+      }
+    }
+  }
+}
+
+.user-info {
+  li {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+    padding: 0 15px;
+    &:last-child {
+      border-bottom: 1px solid #ddd;
+    }
+    span {
+      display: inline-block;
+      line-height: 50px;
+      font-size: 16px;
+      strong {
+        display: block;
+        background-color: #00a0e9;
+        padding: 5px;
+        border-radius: 26px;
+        float: left;
+        line-height: 16px;
+        margin-top: 12px;
       }
     }
   }
