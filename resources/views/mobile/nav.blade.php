@@ -2,7 +2,7 @@
 <div style="height:50px;"></div>
 <ul class="main-nav">
     <li class="active">
-        <a href="#">
+        <a href="{{URL::route('mobile.index')}}">
             <i class="icon-home"></i><span>首页</span>
         </a>
     </li>
