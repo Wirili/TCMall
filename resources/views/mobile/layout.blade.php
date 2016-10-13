@@ -8,7 +8,7 @@
     <title>app首页</title>
 
     <!-- Styles -->
-    <link href="{{asset('build/common/css/bootstrap.min.css')}}" rel="stylesheet" type='text/css'>
+    {{--<link href="{{asset('build/common/css/bootstrap.min.css')}}" rel="stylesheet" type='text/css'>--}}
     <link href="{{asset('build/common/css/font-awesome.min.css')}}" rel="stylesheet" type='text/css'>
 
     <link href="{{ elixir('mobile/css/default.css') }}" rel="stylesheet" type='text/css'>
@@ -16,8 +16,12 @@
     <!-- JavaScripts -->
     <script src="{{asset('build/common/js/jquery-1.12.3.min.js')}}"></script>
 
-    <script src="{{asset('build/common/js/bootstrap.min.js')}}"></script>
+    {{--<script src="{{asset('build/common/js/bootstrap.min.js')}}"></script>--}}
 
+    <!--Swier s-->
+    <link rel="stylesheet" href="{{asset('build/common/plugin/swiper/swiper.min.css')}}">
+    <script src="{{asset('build/common/plugin/swiper/swiper.min.js')}}"></script>
+    <!--Swier e-->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
