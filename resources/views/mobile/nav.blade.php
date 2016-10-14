@@ -12,7 +12,7 @@
         </a>
     </li>
     <li>
-        <a href="#">
+        <a href="{{URL::route('mobile.cart.index')}}">
             <i class="icon-cart"></i><span>购物车</span>
         </a>
     </li>

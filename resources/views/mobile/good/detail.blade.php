@@ -22,7 +22,7 @@
     <div class="goods_detail_title">
         <ul>
             <li><p>{{$good->goods_name}}</p></li>
-            <li><a href="#"><img src="/images/icon_cart.png" alt=""></a></li>
+            <li><a href="#"><i class="icon-cart1" style="color:#ff9933;"></i></a></li>
         </ul>
     </div>
     <div class="goods_detail_price">
@@ -56,7 +56,7 @@
     <div class="clearfix" style="height:60px;"></div>
     <div class="goods_detail_nav">
         <ul>
-            <li><a href="#"><img src="/images/icon_star.png" alt=""><span>收藏</span></a></li>
+            <li><a href="#"><i class="icon-Star"></i><span>收藏</span></a></li>
             <li><a href="#" style="background-color: #ff9a22;">立即购买</a></li>
             <li><a href="#" style="background-color: #fc6f19;">加入购物车</a></li>
         </ul>

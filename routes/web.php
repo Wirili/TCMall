@@ -21,6 +21,8 @@ Route::group(['prefix' => 'mobile','as'=>'mobile.'], function () {
     Route::get('good/detail/{id}', ['uses'=>'Mobile\GoodController@detail','as'=>'good.detail']);
     Route::get('good/index', ['uses'=>'Mobile\GoodController@index','as'=>'good.index']);
     Route::get('user/index', ['uses'=>'Mobile\UserController@index','as'=>'user.index']);
+    Route::get('user/address', ['uses'=>'Mobile\UserController@address','as'=>'user.address']);
+    Route::get('cart/index', ['uses'=>'Mobile\CartController@index','as'=>'cart.index']);
 });
 
 Route::group(['prefix' => 'admin','as'=>'admin.'], function () {

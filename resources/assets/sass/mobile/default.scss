@@ -21,6 +21,7 @@ body {
   background: #f3f3f3;
   font-size: 14px;
   color: #474849;
+  min-width:320px;
 }
 
 ul, li, ol, dl {
@@ -59,6 +60,44 @@ img {
 
 .swiper-wrapper img {
   display: block;
+}
+
+.price{
+  color:#ff4d00;
+}
+
+/* ====================
+*    input组件
+==================== */
+/*圆形勾*/
+.input_checkbox input[type=checkbox] {visibility: hidden;}
+.input_checkbox input[type=checkbox] {display:none;}
+.input_checkbox label {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background:url("/build/mobile/images/icon_check_empty.png");
+  background-size:100% 100%;
+  vertical-align: middle;
+}
+.input_checkbox input[type=checkbox]:checked + label {
+  background:url("/build/mobile/images/icon_check.png");
+  background-size:100% 100%;
+}
+/*方形勾*/
+.input_checkbox1 input[type=checkbox] {visibility: hidden;}
+.input_checkbox1 input[type=checkbox] {display:none;}
+.input_checkbox1 label {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background:url("/build/mobile/images/icon_check1_empty.png");
+  background-size:100% 100%;
+  vertical-align: middle;
+}
+.input_checkbox1 input[type=checkbox]:checked + label {
+  background:url("/build/mobile/images/icon_check1.png");
+  background-size:100% 100%;
 }
 
 .pl-list {
@@ -273,9 +312,8 @@ img {
       height: 40px;
       overflow: hidden;
     }
-    img {
-      width: 40px;
-      height: 40px;
+    i {
+      font-size:40px;
       vertical-align: middle;
     }
   }
@@ -397,11 +435,8 @@ img {
       color: #999;
       font-size: 14px;
     }
-    img {
-      width: 20px;
-      height: 20px;
-      display: block;
-      margin: 0 auto;
+    i {
+      font-size:20px;
     }
     span {
       display: block;
@@ -441,53 +476,55 @@ img {
     border-bottom: 1px solid #eee;
     .mtd1 {
       display: inline-block;
-      height: 30px;
-      width: 30px;
-      vertical-align: middle;
+      height: 50px;
+      line-height: 50px;
       margin-left: 10px;
-      img {
-        height: 30px;
-        width: 30px;
+      i{
+        font-size:30px;
+        vertical-align: middle;
       }
     }
     .mtd2 {
+      float:right;
       display: inline-block;
-      font-size: 16px;
       margin-left: 8px;
       height: 50px;
       vertical-align: middle;
       line-height: 50px;
-    }
-    .mtd3 {
-      float: right;
       margin-right: 3%;
-      height: 50px;
-      line-height: 50px;
-      color: #727272;
-      img {
-        height: 20px;
-        margin-top: 15px;
-        float: right;
-      }
     }
   }
   ul {
     overflow: hidden;
     padding: 0 10px;
     li a {
+      position: relative;
       display: inline;
       float: left;
       width: 25%;
       padding: 15px 5px;
       box-sizing: border-box;
       text-align: center;
+      em{
+        display:inline-block;
+        position:absolute;
+        top:10px;
+        left:50%;
+        margin-left:15px;
+        font-style:normal;
+        background-color:#da0000;
+        color:#fff;
+        padding:0 4px;
+        font-size:10px;
+        border-radius: 14px;
+      }
       span {
         display: block;
         color: #727272;
       }
-      img {
-        width: 30px;
-        height: 30px;
+      i {
+        font-size:30px;
+        color:#727272;
       }
     }
   }
@@ -509,32 +546,69 @@ img {
     }
     .mtd1 {
       display: inline-block;
-      height: 30px;
-      width: 30px;
-      vertical-align: middle;
+      height: 50px;
+      line-height: 50px;
       margin-left: 10px;
-      img {
-        height: 30px;
-        width: 30px;
+      i{
+        font-size:30px;
+        vertical-align: middle;
       }
     }
     .mtd2 {
+      float:right;
       display: inline-block;
       margin-left: 8px;
       height: 50px;
       vertical-align: middle;
       line-height: 50px;
-    }
-    .mtd3 {
-      float: right;
       margin-right: 3%;
-      height: 50px;
-      line-height: 50px;
-      img {
-        height: 20px;
-        margin-top: 15px;
-        float: right;
-      }
     }
   }
 }
+
+/* ====================
+*    我的 地址列表
+==================== */
+
+.my_address li{overflow: hidden;padding:10px 10px 0 10px;background-color: #fff;margin-top:6px;color:#444;}
+.my_address .top{position: relative;border-bottom:1px solid #eee;}
+.my_address .top p{line-height:30px;height:30px; margin-right:20px;}
+.my_address .top p strong{float:right;font-weight: normal;}
+.my_address .top .addr{height:60px;}
+.my_address .top img{width:20px;height:20px;}
+.my_address .top span{position: absolute;top:50%;right:0;margin-top:-10px;}
+.my_address .bottom {line-height:50px;}
+.my_address .bottom span {float:right;}
+.my_address .bottom span a{border:1px solid #eee;display:inline-block;height:26px;line-height:26px;padding:0 5px;}
+
+.my_address_nav {position:fixed;bottom:0;width:100%;text-align:center;font-size:20px;line-height:50px;height:50px;background-color: #ff4d00;color:#fff;}
+
+
+/*购物车*/
+
+.car_list ul {overflow: hidden;margin:6px 0;}
+.car_list li {padding:10px;overflow: hidden;position: relative;background-color: #fff;border-bottom: 1px solid #eee}
+.car_list li:last-child {border-bottom: none;}
+.car_list li > div{float:left;}
+.car_list .input_checkbox {width:35px; vertical-align: middle;margin-top: -13px;position: absolute;top:50%;}
+.car_list .img {width:100px;height:100px;margin-left:35px;}
+.car_list .img img{width:100%; vertical-align: middle;display: block;}
+.car_list .desc {float:none;margin-left:146px;font-size:16px;}
+.car_list .desc .desc_t{line-height: 22px;height:44px;}
+.car_list .desc .desc_p{line-height: 26px;height:26px;}
+.car_list .desc .desc_p del{font-size: 14px;padding-left:5px;}
+.car_list .desc .desc_b{line-height: 30px;height:30px;}
+.car_list .desc .desc_b > a {display:block;float:right;padding:2px;font-size:20px;}
+
+.minus_add{display:block;overflow: hidden;float:left;}
+.minus_add a{display:block;float:left; padding:6px; border:1px solid #eee;line-height:0;}
+.minus_add input{float:left;line-height:24px;font-size:16px;border:none;border-top:1px solid #eee;border-bottom:1px solid #eee;border-radius: 0;color:#000;text-align: center;}
+.minus_add a img{width:16px;height:16px;}
+
+.car_nav {position: fixed;width:100%;bottom:0;background-color: #fff;min-width:330px;}
+.car_nav .input_checkbox{float:left;margin-left:10px;}
+.car_nav li{border-top:1px solid #eee;}
+.car_nav ul li a{float:left;width:45%;text-align: center;height:50px;line-height: 50px;font-size:18px;}
+.car_nav ul li:last-child a{width:30%;color:#fff;}
+.car_nav ul li:first-child a{width:25%;color:#727272;}
+.car_nav ul li a p{height:25px;line-height:25px;text-align: right; padding-right:10px;font-size:15px;}
