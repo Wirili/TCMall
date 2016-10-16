@@ -1,6 +1,7 @@
 @extends('mobile.layout')
 
 @section('content')
+    @include('mobile.toolbar')
     <div class="car_list">
         <ul>
             <li>
