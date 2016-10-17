@@ -16,10 +16,10 @@ class CreateGoodsGallery extends Migration
         Schema::create('goods_gallery', function (Blueprint $table) {
             $table->increments('img_id');
             $table->unsignedInteger('goods_id')->comment('商品id');
-            $table->string('img_url',255)->comment('大图');
-            $table->string('thumb_url',255)->comment('小图');
-            $table->string('original_url',255)->comment('原图');
-            $table->string('img_desc',255)->comment('图片描述');
+            $table->string('img_url',255)->default('')->comment('大图');
+            $table->string('thumb_url',255)->default('')->comment('小图');
+            $table->string('original_url',255)->default('')->comment('原图');
+            $table->string('img_desc',255)->default('')->comment('图片描述');
         });
     }
 
