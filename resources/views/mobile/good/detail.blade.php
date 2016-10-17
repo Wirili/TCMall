@@ -29,7 +29,7 @@
         <p>￥ {{$good->shop_price}}</p><span>查看折扣等级</span>
     </div>
     <div class="goods_detail_select">
-        <p>选择分类</p><span><img src="/images/rt.png" alt=""></span>
+        <p>选择分类</p><span><i class="icon-right"></i></span>
     </div>
     <div class="goods_detail_tab">
         <ul class="tab-header">
